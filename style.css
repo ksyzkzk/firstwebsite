@@ -1,0 +1,54 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+}
+
+#header {
+    width: 100%;
+    height: 20%;
+    background-image: url( "Sheet Music - Luke Lewis.jpg" )
+}
+
+#header>div {
+    width: 11%;
+    height: 92%;
+    margin: 0 auto 0 auto;
+}
+
+#header>div>img {
+    width: 100%;
+    height: 100%;
+    margin: 50% 0 0 0;
+}
+
+#contents {
+    width: 100%;
+    height: 90%;
+    background-color: red;
+}
+
+#nav{
+    width: 10%;
+    height: 100%;
+    background-color: green;
+    float: left;
+}
+#article{
+    width: 90%;
+    height: 100%;
+    background-color: aqua;
+    float: right;
+}
+#footer {  
+    width: 100%;
+    height: 10%;
+    background-color: yellow;
+}
