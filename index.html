@@ -8,7 +8,22 @@
         <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/070aaa2d76.js" crossorigin="anonymous"></script>
+        <script>
+            let counter = 1;
+            setInterval(function(){
+                if(document.getElementById("radio" + counter).checked = true) {
+                    //if(document.getElementsByClassName("if_1").checked = true){
+                    //    clearInterval();
+                    //}
+                    counter++;
+                    if(counter > 3) {
+                        counter = 1;
+                    }
+                }
+            }, 4000);
+        </script>
         <title>InTro-Music</title>
+
     </head>
     <body>
         <header id="x">
@@ -94,8 +109,36 @@
                 </article>
             </section>
             
-            <section id="bt_2">
-                <iframe width=90% height=100% src="https://www.youtube.com/embed/ImKWbWCpR74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <section class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio_btn" id="radio1">
+                    <input type="radio" name="radio_btn" id="radio2">
+                    <input type="radio" name="radio_btn" id="radio3">
+
+                    <div class="slide first">
+                        <a href="https://youtu.be/ImKWbWCpR74" target="_blank"><img class="img_main" src="ifra/새소년.PNG"></a>
+                        
+                    </div>
+                    <div class="slide">
+                        <a href="https://youtu.be/tQ0yjYUFKAE" target="_blank"><img class="img_main" src="ifra/비버.PNG"></a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://youtu.be/0dRo5Kbgx6c" target="_blank"><img class="img_main" src="ifra/검정치마.PNG"></a>
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+               
                
                
             </section>
